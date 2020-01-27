@@ -1,0 +1,19 @@
+body{ 
+    background: whitesmoke; 
+}
+.mainHeader{ 
+    color: red
+}
+.sectionHeader{ 
+    color: blue
+}
+p{ 
+    color: black
+}
+.dairyHeader{
+    color: hotpink
+}
+.footer{
+    color: gray
+
+}
