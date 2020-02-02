@@ -1,19 +1,20 @@
 body{ 
-    background: whitesmoke; 
+    background: white; 
 }
 .mainHeader{ 
-    color: red
+    color: #004704
 }
 .sectionHeader{ 
-    color: blue
-}
-p{ 
-    color: black
-}
+    color: #005425
+}  
 .dairyHeader{
-    color: hotpink
+    color: #187D87
 }
 .footer{
-    color: gray
+    color: #45A59C
 
 }
+ .link{
+     color: #84CE9C
+
+ }
