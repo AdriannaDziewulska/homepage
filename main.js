@@ -4,5 +4,3 @@ const section = document.querySelector ('section')
 console.log (section)
 const paragrahps = document.querySelectorAll ('p')
 console.log (paragrahps)
-
-
