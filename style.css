@@ -1,10 +1,16 @@
+.body{
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
 .diary{
     color: #187D87;
     padding-top: 10px;
     clear: both;
 }
 .diary__link{
-    color: #84CE9C
+    color: #45A59C
 }
 .diary__photo{
     max-width: 200px;
@@ -12,7 +18,11 @@
 
 
 .footer{
-    color: #45A59C
+    color: #45A59C;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    padding: 10px;
 }
 
 
@@ -28,11 +38,11 @@
     max-width: 200px;
     float: left;
     margin: 0 16px 16px 0;
+    border-radius: 30px;
 }
 
 
 .main{ 
-    background: white; 
     max-width: 700px;
     width: 100%;
     margin: 32px auto;
@@ -49,6 +59,7 @@
     box-sizing: border-box;
     padding: 16px;
     background: rgb(241, 241, 241);
+    border-radius: 30px;
 }
 .navigation__link{
     color: #84CE9C
@@ -62,4 +73,5 @@
     padding: 10px;
     color: #84CE9C;
     background: rgb(241, 241, 241);
+    border-radius: 30px;
 }
