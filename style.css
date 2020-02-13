@@ -1,6 +1,7 @@
 .body{
     background-color: #8EC5FC;
 background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+width: 100%;
 
 }
 
@@ -44,25 +45,35 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
 .main{ 
     max-width: 700px;
-    width: 100%;
+    width: 75%;
     margin: 32px auto;
     padding-top: 50px;
 
 }
 
-
-.navigation{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+.site-header{
+    background:  rgb(241, 241, 241);
     box-sizing: border-box;
+    position: fixed;
     padding: 16px;
-    background: rgb(241, 241, 241);
+    left:0;
+    top:0;
+    width:100%;
     border-radius: 30px;
 }
+
+.navigation{
+    
+}
+.navigation__item{
+    display: inline;
+}
+.navigation__list{
+    list-style: none;
+    padding: 0;
+}
 .navigation__link{
-    color: #84CE9C
+    color: #84CE9C;
 }
 
 
