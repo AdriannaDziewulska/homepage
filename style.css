@@ -1,85 +1,93 @@
-*,*:after,*:before{
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
     box-sizing: inherit;
 }
 
-.body{
+.body {
     background-color: #8EC5FC;
-background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-width: 100%;
-
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    width: 100%;
+    display: grid;
 }
 
-.diary{
+.diary {
     color: #187D87;
     padding-top: 10px;
     clear: both;
 }
-.diary__link{
+
+.diary__link {
     color: #45A59C
 }
-.diary__photo{
+
+.diary__photo {
     max-width: 200px;
 }
 
-
-.footer{
-    color: #45A59C;
+.footer {
+    color: #45A59C ;
     position: fixed;
     bottom: 5px;
     left: 5px;
     padding: 10px;
 }
 
-
-.header{ 
+.header {
     color: #004704;
     padding-bottom: 10px;
 }
-.header__about{ 
-    color: #005425
 
-}  
-.header__photo{
+.header__about {
+    color: #005425
+}
+
+.header__photo {
     max-width: 200px;
     float: left;
     margin: 0 16px 16px 0;
     border-radius: 30px;
 }
 
-
-.main{ 
+.main {
     max-width: 700px;
     width: 75%;
     margin: 32px auto;
     padding-top: 50px;
-
 }
 
-.site-header{
-    background:  rgb(241, 241, 241);
+.site-header {
+    background: rgb(241, 241, 241);
     box-sizing: border-box;
     position: fixed;
     padding: 16px;
-    left:0;
-    top:0;
-    width:100%;
+    left: 0;
+    top: 0;
+    width: 100%;
     border-radius: 30px;
 }
 
-.navigation{
+.navigation {
     
 }
-.navigation__item{
-    display: inline;
-}
-.navigation__list{
-    list-style: none;
-    padding: 0;
-}
-.navigation__link{
-    color: #84CE9C;
+
+.navigation__item {
+    display: block;
+    margin: 0 16px;
 }
 
+.navigation__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__link {
+    color: #84CE9C;
+}
 
 .top {
     position: fixed;
@@ -89,4 +97,18 @@ width: 100%;
     color: #84CE9C;
     background: rgb(241, 241, 241);
     border-radius: 30px;
+}
+
+.all_dairy{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+
+@media (max-width: 640px){
+    .all_dairy{
+        grid-template-columns: 1fr;
+    }
 }
