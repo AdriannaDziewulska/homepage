@@ -46,7 +46,7 @@ html {
 
 .header__photo {
     max-width: 200px;
-    float: left;
+    float: left ;
     margin: 0 16px 16px 0;
     border-radius: 30px;
 }
@@ -67,6 +67,7 @@ html {
     top: 0;
     width: 100%;
     border-radius: 30px;
+    min-height: 48px;
 }
 
 .navigation {
@@ -99,16 +100,41 @@ html {
     border-radius: 30px;
 }
 
-.all_dairy{
+.grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
+    clear: left;
 }
 
 
 @media (max-width: 640px){
-    .all_dairy{
+    .grid{
         grid-template-columns: 1fr;
+    }
+    .navigation__list{
+        flex-direction: column;
+        display: none;
+    }
+    .navigation__list--visible{
+        display: flex;
+    }
+    .navigation__item{
+        margin: 10px;
+    }
+    .navigation__switcher{
+        border: none;
+        background: none;
+        position: absolute;
+        left: 16px;
+        top: 16px;
+
+    }
+}
+
+@media (min-width: 640px) {
+    .navigation__switcher{
+        display: none;
     }
 }
